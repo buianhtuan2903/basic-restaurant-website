@@ -1,0 +1,61 @@
+.activated{
+    border-bottom: 3px solid #F38F3F;
+}
+
+#menubar{
+    padding: 6em 0;
+    background-color: #F5F5F5;
+}
+
+.menu-list{
+    padding: 0px 20px;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 74px;
+}
+
+.menu-item{
+    padding: 10px;
+}
+
+.menu-item > a{
+    color: black;
+    font-size: 1.2em;
+}
+
+.menu-item > a:active{
+    color: #F38F3F;
+}
+
+.col-lg-9{
+    border-left: 1px solid #F38F3F;
+}
+
+.card{
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-title{
+    font-size: 1.5em;
+}
+
+.order{
+    color: white;
+    background-color: #F38F3F;
+    border: 2px solid #F38F3F;
+    border-radius: 0;
+}
+
+.order:hover{
+    color: #F38F3F;
+    background-color: white;
+}
+
+.feature-title{
+    color: #F38F3F;
+    font-size: 3em;
+    border-bottom: 2px solid #F38F3F;
+    margin: 0px 15px 1em 15px;
+}

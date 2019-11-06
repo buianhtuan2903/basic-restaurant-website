@@ -7,26 +7,25 @@
     <meta name="Description" content="Restaurant demo template">
     <title>Peaceful cuisine</title>
     <link rel="icon" href="./assets/logo.png" type="image">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
     <link rel="stylesheet" href="./styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <a href="#" class="logo-link"><img src="./assets/logo.png" alt="logo" class="logo"></a>
-                <button type="button" class="navbar-toggle ml-auto" data-toggle="collapse" data-target="#myNavbar">
+                <a href="./index.html" class="logo-link"><img src="./assets/logo.png" alt="logo" class="logo"></a>
+                <button class="navbar-toggler ml-auto mr-2" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <img class="menu-bar" src="./assets/menubar.png" alt="menubar">
                 </button>
-            </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="#menu">MENU</a></li>
+                <ul class="nav navbar-nav ml-auto align-items-center">
+                    <li class="nav-item"><a href="./menu.html">MENU</a></li>
                     <li class="nav-item"><a href="#blog">PROMO</a></li>
                     <li class="nav-item"><a href="#contact">CONTACT</a></li>
                     <li class="nav-item"><a href="#">ORDER</a></li>
@@ -66,11 +65,10 @@
 
             <!-- Mouse scroll -->
             <div>
-
-                <div class="mouse">
+                <a class="mouse" href="#menu">
                     <div class="wheel"></div>
                     <div class="arrows"><span></span></div>
-                </div>
+                </a>
                 
             </div>
         </div>
@@ -84,14 +82,14 @@
     <div id="blog">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-lg-12">
                     <div class="blog-title">BLOG   
                     </div>
                     <button class="btn ml-auto">See more</button>
                 </div>
             </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <div class="post">
                     <div class="post-img"><img src="./assets/carousel1.jpg" alt=""></div>
                     <div class="post-title">What is cuisine?</div>
@@ -104,7 +102,7 @@
                     <button class="btn">See more</button>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="post">
                     <div class="post-img"><img src="./assets/carousel2.jpg" alt=""></div>
                     <div class="post-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi.</div>
@@ -120,7 +118,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="post">
                     <div class="post-img"><img src="./assets/carousel3.jpg" alt=""></div>
                     <div class="post-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi.</div>
@@ -134,7 +132,7 @@
                     <button class="btn">See more</button>
                 </div>
             </div>
-            <div class="col-md-4">                
+            <div class="col-lg-4">                
                 <div class="post">
                     <div class="post-img"><img src="./assets/carousel1.jpg" alt=""></div>
                     <div class="post-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi.</div>
@@ -148,7 +146,7 @@
                     <button class="btn">See more</button>
                 </div>
             </div>
-            <div class="col-md-4">                
+            <div class="col-lg-4">                
                 <div class="post">
                     <div class="post-img"><img src="./assets/carousel2.jpg" alt=""></div>
                     <div class="post-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi.</div>
@@ -192,19 +190,48 @@
     <footer class="copyright">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-6">
-                    <div>
-                        Website template by @Bui Anh Tuan <br>
-                        Email: <a href="mailto:buianhtuan2903@gmail.com" class="info" rel="noopener noreferrer">buianhtuan2903@gmail.com</a> <br>
-                        Tel: <a href="tel:+84982227965" class="info" rel="noopener noreferrer">(+84)98 222 7965</a>
-                    </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="footer-title">PEACEFUL CUISINE</div>
+                    <ul>
+                        <li class="footer-item">About us</li>
+                        <li class="footer-item">Blog</li>
+                        <li class="footer-item">Promo</li>
+                        <li class="footer-item">Privacy</li>
+                    </ul>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                <p>&copy; 2019 BuiAnhTuan</p> 
+                <div class="col-sm-4 col-xs-8">
+                    <div class="footer-title">SUPPORT</div>
+                    <ul>
+                        <li class="footer-item">Tel +123456789</li>
+                        <li class="footer-item">Address 123 Street 456, 789</li>
+                        <li class="footer-item">Email buianhtuan2903@gmail.com</li>
+                    </ul>
                 </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="footer-title">DELIVERY</div>
+                    <ul>
+                        <li class="footer-item">Shipping method</li>
+                        <li class="footer-item">Payment</li>
+                        <li class="footer-item">Return</li>
+                        <li class="footer-item">Exchange</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <div class="footer-title">CAREER</div>
+                    <ul>
+                        <li class="footer-item">Apply now</li>
+                        <li class="footer-item">Hotline</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-copyright">
+                <div class="col-sm-3">Website template by @Bui Anh Tuan</div>
+                <div class="col-sm-4">Email: <a href="mailto:buianhtuan2903@gmail.com" class="info" rel="noopener noreferrer">buianhtuan2903@gmail.com</a></div>
+                <div class="col-sm-3">Tel: <a href="tel:+84982227965" class="info" rel="noopener noreferrer">(+84)98 222 7965</a></div>
+                <div class="col-sm-2">&copy; 2019 BuiAnhTuan</div>
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>

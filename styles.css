@@ -23,6 +23,9 @@ button{
     font-size: 16px;
 }
 
+li{
+    list-style: none;
+}
 
 /* Navbar */
 .navbar{
@@ -33,6 +36,7 @@ button{
 .logo{
     max-height: 64px;
     width: auto;
+    padding-left: 10px;
 }
 
 .navbar-header{
@@ -48,19 +52,24 @@ button{
     border-bottom: 3px solid #F38F3F;
 }
 
+.nav-item:active{
+    border-bottom: 3px solid #F38F3F;
+}
+
 .nav-item > a{
     color: rgb(75, 75, 75);
     font-weight: 700;
     padding: 10px 10px;
 }
 
-.navbar-nav{
-    float: right;
+.menu-bar{
+    height: 32px;
+    width: auto;
 }
 
 /* Landing */
 .landing{
-    margin-top: 64px;
+    padding-top: 64px;
 }
 
 .carousel-item >img{
@@ -75,7 +84,6 @@ button{
     width: 36px;
     height: 56px;
     transform: translateX(-50%);
-    z-index: 99999;
     border: 2px solid rgba(255,255,255,.8);
     animation: mouse-wheel 2s infinite;
     border-radius: 1.3em;
@@ -133,15 +141,15 @@ button{
     padding: 6em 0;
 }
 
-.col-md-12{
+.col-lg-12{
     display: flex;
 }
 
-.col-md-8, .col-md-4{
+.col-lg-8, .col-lg-4{
     padding: 15px;
 }
 
-.col-md-12 > button{
+.col-lg-12 > button{
     max-height: 63px;
     padding: 0px 30px;
     background-color: white;
@@ -226,8 +234,19 @@ form{
 .copyright{
     color: white;
     background-color: #202020;
+    padding: 50px 0px 10px 0px;
 }
 
 .info, .info:hover {
     color: white;
+}
+
+.footer-title{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.footer-copyright{
+    border-top: 2px solid white;
+    padding-top: 20px; 
 }
