@@ -81,8 +81,8 @@ li{
     position: absolute;
     bottom: 10%;
     left: calc(50% - 18px);
-    width: 36px;
-    height: 56px;
+    width: 26px;
+    height: 42px;
     transform: translateX(-50%);
     border: 2px solid rgba(255,255,255,.8);
     animation: mouse-wheel 2s infinite;
@@ -94,7 +94,7 @@ li{
     display: block;
     height: 0.7em;
     width: 0.4em;
-    margin: 0.6em auto 0;
+    margin: 0.5em auto 0;
     background: rgba(255,255,255,.8);
     border-radius: 30%;
 }
@@ -105,7 +105,7 @@ li{
 	}
 
 	50% {
-		transform:translate(0,2em);
+		transform:translate(0,2vw);
     }
     100% {
 		transform:translate(0,0);
@@ -198,7 +198,7 @@ li{
     padding: 40px 0;
 }
 
-#contact-form, #social-bar{
+.contact-form, #social-bar{
     padding: 10px 0;
     display: inline-flex;
     flex-direction: row;
@@ -214,10 +214,6 @@ li{
     height: 40px;
     width: auto;
     background:none;
-}
-
-form{
-    margin-left: 20px;
 }
 
 #basic-addon1{
