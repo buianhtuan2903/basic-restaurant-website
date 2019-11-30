@@ -27,6 +27,19 @@ li{
     list-style: none;
 }
 
+/* Animation */
+
+.fadeout {
+    opacity: 0;
+    transform: translate(0, 20px); 
+    transition: all 1s;
+}
+    
+.fadein { 
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 /* Navbar */
 .navbar{
     padding: 0px;
@@ -68,9 +81,6 @@ li{
 }
 
 /* Landing */
-.landing{
-    padding-top: 64px;
-}
 
 .carousel-item >img{
     width: 100%;
@@ -203,7 +213,7 @@ li{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 #social-bar{
