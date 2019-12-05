@@ -5,6 +5,7 @@
 #menubar{
     padding: 6em 0;
     background-color: #F5F5F5;
+    min-height: calc(100vh - 240px - 64px);
 }
 
 .menu-list{
@@ -38,7 +39,9 @@
 }
 
 .card-title{
-    font-size: 1.5em;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .order{
@@ -53,7 +56,7 @@
     background-color: white;
 }
 
-.feature-title{
+.category-title{
     color: #F38F3F;
     font-size: 3em;
     border-bottom: 2px solid #F38F3F;

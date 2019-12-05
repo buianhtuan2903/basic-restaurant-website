@@ -1,0 +1,26 @@
+.activated{
+    border-bottom: 3px solid #F38F3F;
+}
+
+#contactbar{
+    padding: 6em 0;
+    min-height: calc(100vh - 240px - 64px);
+}
+
+.contact-header{
+    border-bottom: 1px solid #F38F3F;
+    font-size: 28px;
+    margin: 30px 0 10px 0;
+}
+
+.contact-title{
+    font-size: 20px;
+}
+
+.contact-content{
+    font-size: 16px;
+}
+
+.contact-content > a {
+    color: black;
+}

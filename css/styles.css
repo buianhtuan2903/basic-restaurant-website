@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
-    scroll-behavior: smooth;   
+    /* scroll-behavior: smooth; */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -28,11 +28,10 @@ li{
 }
 
 /* Animation */
-
 .fadeout {
     opacity: 0;
-    transform: translate(0, 20px); 
-    transition: all 1s;
+    transform: translate(0, 30px); 
+    transition: all 1.5s;
 }
     
 .fadein { 
@@ -44,6 +43,7 @@ li{
 .navbar{
     padding: 0px;
     background-color: white;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.15);
 }
 
 .logo{
@@ -75,11 +75,15 @@ li{
     padding: 10px 10px;
 }
 
-.menu-bar{
+.hamburger-bar{
     height: 32px;
     width: auto;
 }
 
+.show > ul > .nav-item, .collapsing > ul > .nav-item{
+    width: 100%;
+    text-align: center;
+}
 /* Landing */
 
 .carousel-item >img{
@@ -138,6 +142,7 @@ li{
 .menu-title{
     text-align: center;
     font-size: 3em;
+    padding-bottom: 1em;
 }
 
 .col-md-7 > img {
@@ -146,7 +151,7 @@ li{
 }
 
 /* Post */
-#blog{
+#promo{
     background-color: #222122;
     padding: 6em 0;
 }
@@ -156,7 +161,7 @@ li{
 }
 
 .col-lg-8, .col-lg-4{
-    padding: 15px;
+    padding: 15px 15px 0 15px;
 }
 
 .col-lg-12 > button{
@@ -179,6 +184,8 @@ li{
 .post{
     background-color: white;
     color: black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .post-title{
@@ -191,7 +198,7 @@ li{
 }
 
 .post > button{
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     color: white;
     background-color: #F38F3F;
     border: 2px solid #F38F3F;
@@ -213,7 +220,7 @@ li{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #social-bar{

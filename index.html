@@ -9,27 +9,26 @@
     <link rel="icon" href="./assets/image/logo.png" type="image">
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="./assets/jquery/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
     <script src="./assets/bootstrap/bootstrap.min.js"></script>
-    <script src="fadein.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-md sticky-top">
         <div class="container">
                 <a href="./index.html" class="logo-link"><img src="./assets/image/logo.png" alt="logo" class="logo"></a>
                 <button class="navbar-toggler ml-auto mr-2" type="button" data-toggle="collapse" data-target="#myNavbar">
-                    <img class="menu-bar" src="./assets/image/menubar.png" alt="menubar">
+                    <img class="hamburger-bar" src="./assets/image/menubar.png" alt="menubar">
                 </button>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav ml-auto align-items-center">
-                    <li class="nav-item"><a href="./menu.html">MENU</a></li>
-                    <li class="nav-item"><a href="#blog">PROMO</a></li>
-                    <li class="nav-item"><a href="#contact">CONTACT</a></li>
-                    <li class="nav-item"><a href="#">ORDER</a></li>
+                    <li class="nav-item"><a href="./page/aboutus.html">ABOUT US</a></li>
+                    <li class="nav-item"><a href="./page/menu.html">MENU</a></li>
+                    <li class="nav-item"><a href="./page/promo.html">PROMO</a></li>
+                    <li class="nav-item"><a href="./page/contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -74,22 +73,24 @@
             </div>
         </div>
     </div>
-    <div id="menu">
-        <div class="menu-title">MENU</div>
-        <div class="container justify-content-center">
-            <img src="./assets/image/menu.jpg" alt="menu">
+    <div id="menu" class="bg-light">
+        <div class="container fadeout">
+            <div class="menu-title">MENU</div>
+            <div class="justify-content-center">
+                <img src="./assets/image/menu.jpg" alt="menu">
+            </div>
         </div>
     </div>
-    <div id="blog">
+    <div id="promo">
         <div class="container">
-            <div class="row fadeout">
+            <div class="row">
                 <div class="col-lg-12 ">
-                    <div class="blog-title">BLOG   
+                    <div class="blog-title">PROMO 
                     </div>
-                    <button class="btn ml-auto ">See more</button>
+                    <button class="btn ml-auto">See more</button>
                 </div>
             </div>
-        <div class="row fadeout">
+        <div class="row">
             <div class="col-lg-8">
                 <div class="post">
                     <div class="post-img"><img src="./assets/image/carousel1.jpg" alt=""></div>
@@ -118,7 +119,7 @@
                 </div>
             </div>
         </div>
-        <div class="row fadeout">
+        <div class="row">
             <div class="col-lg-4">
                 <div class="post">
                     <div class="post-img"><img src="./assets/image/carousel3.jpg" alt=""></div>

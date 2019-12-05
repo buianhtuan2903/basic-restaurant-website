@@ -1,0 +1,9 @@
+.activated{
+    border-bottom: 3px solid #F38F3F;
+}
+
+#promobar{
+    padding: 6em 0;
+    background-color: rgb(240, 240, 240);
+    min-height: calc(100vh - 240px - 64px);
+}

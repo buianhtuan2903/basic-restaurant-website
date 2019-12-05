@@ -6,36 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Restaurant demo template">
     <title>Peaceful cuisine</title>
-    <link rel="icon" href="./assets/image/logo.png" type="image">
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="icon" href="../assets/image/logo.png" type="image">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./menu.css">
-    <script src="./assets/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../assets/jquery/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
-    <script src="./assets/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap/bootstrap.min.js"></script>
+    <script src="../script.js"></script>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-md sticky-top">
         <div class="container">
-                <a href="/index.html" class="logo-link"><img src="./assets/image/logo.png" alt="logo" class="logo"></a>
+                <a href="/index.html" class="logo-link"><img src="../assets/image/logo.png" alt="logo" class="logo"></a>
                 <button class="navbar-toggler ml-auto mr-2" type="button" data-toggle="collapse" data-target="#myNavbar">
-                    <img class="menu-bar" src="./assets/image/menubar.png" alt="menubar">
+                    <img class="hamburger-bar" src="../assets/image/menubar.png" alt="menubar">
                 </button>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav ml-auto align-items-center">
+                    <li class="nav-item"><a href="/page/aboutus.html">ABOUT US</a></li>
                     <li class="nav-item activated"><a href="#menubar">MENU</a></li>
-                    <li class="nav-item"><a href="/index.html">PROMO</a></li>
-                    <li class="nav-item"><a href="/index.html">CONTACT</a></li>
-                    <li class="nav-item"><a href="/index.html">ORDER</a></li>
+                    <li class="nav-item"><a href="/page/promo.html">PROMO</a></li>
+                    <li class="nav-item"><a href="/page/contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="landing">
-        <img class="landing-menu" src="./assets/image/menu1.jpg" alt="carousel1">
+        <img class="landing-menu" src="../assets/image/menu1.jpg" alt="carousel1">
     </div>
     <div id="menubar">
         <div class="container">
@@ -49,118 +50,124 @@
                 </div>
                 <div class="col-lg-9">
                     <div id="feature">
-                        <div class="feature-title">FEATURE</div>
+                        <div class="category-title">FEATURE</div>
                         <div class="row">
                             <div class="col-md-4 col-sm-6">
                                 <div class="card">
-                                    <img src="./assets/image/food1.png" class="card-img-top" alt="...">
+                                    <img src="../assets/image/food1.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Pork Curry</h5>
-                                        <p class="card-text">Some quick example text to caption and make up the bulk content.</p>
-                                        <a href="#" class="btn order">ORDER</a>
+                                        <p class="card-title">Pork Curry</p>
+                                        <p class="card-title font-weight-bold">80.000 &#8363;</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="card">
-                                    <img src="./assets/image/food2.png" class="card-img-top" alt="...">
+                                    <img src="../assets/image/food2.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Grill Skewer</h5>
-                                        <p class="card-text">Some quick example text to caption and make up the bulk content.</p>
-                                        <a href="#" class="btn order">ORDER</a>
+                                        <p class="card-title">Pasta</p>
+                                        <p class="card-title font-weight-bold">110.000 &#8363;</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">                                
                                 <div class="card">
-                                    <img src="./assets/image/food3.jpg" class="card-img-top" alt="...">
+                                    <img src="../assets/image/food3.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Mango Chicken</h5>
-                                        <p class="card-text">Some quick example text to caption and make up the bulk content.</p>
-                                        <a href="#" class="btn order">ORDER</a>
+                                        <p class="card-title">Mango Chicken</p>
+                                        <p class="card-title font-weight-bold">160.000 &#8363;</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">                                
                                 <div class="card">
-                                    <img src="./assets/image/food4.png" class="card-img-top" alt="...">
+                                    <img src="../assets/image/food4.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Grill Beef</h5>
-                                        <p class="card-text">Some quick example text to caption and make up the bulk content.</p>
-                                        <a href="#" class="btn order">ORDER</a>
+                                        <p class="card-title">Grill Beef</p>
+                                        <p class="card-title font-weight-bold">150.000 &#8363;</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="desert">
-                        <div class="feature-title">DESERT</div>
-                        <div class="row">
+                        <div class="category-title">DESERT</div>
+                        <div class="row fadeout">
                             <div class="col-md-4 col-sm-6">
                                 <div class="card">
-                                    <img src="./assets/image/burger1.jpg" class="card-img-top" alt="...">
+                                    <img src="../assets/image/burger1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Chicken burger</h5>
-                                        <p class="card-text">Some quick example text to caption and make up the bulk content.</p>
-                                        <a href="#" class="btn order">ORDER</a>
+                                        <p class="card-title">Chicken burger</p>
+                                        <p class="card-title font-weight-bold">200.000 &#8363;</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="card">
-                                    <img src="./assets/image/burger3.png" class="card-img-top" alt="...">
+                                    <img src="../assets/image/burger3.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Beef burger</h5>
-                                        <p class="card-text">Some quick example text to caption and make up the bulk content.</p>
-                                        <a href="#" class="btn order">ORDER</a>
+                                        <p class="card-title">Beef burger</p>
+                                        <p class="card-title font-weight-bold">100.000 &#8363;</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="drink">
-                        <div class="feature-title">DRINK</div>
-                        <div class="row">
+                    <div id="drink" class="">
+                        <div class="category-title">DRINK</div>
+                        <div class="row fadeout">
                             <div class="col-md-4 col-sm-6">
-                                <div class="card">
-                                    <img src="./assets/image/carousel1.jpg" class="card-img-top" alt="...">
+                                <div class="card ">
+                                    <img src="../assets/image/carousel1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Feature 2</h5>
-                                        <p class="card-text">Some quick example text to caption and make up the bulk content.</p>
-                                        <a href="#" class="btn order">ORDER</a>
+                                        <p class="card-title">Feature 1</p>
+                                        <p class="card-title font-weight-bold">30.000 &#8363;</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="card">
-                                    <img src="./assets/image/carousel2.jpg" class="card-img-top" alt="...">
+                                    <img src="../assets/image/carousel3.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Feature 1</h5>
-                                        <p class="card-text">Some quick example text to caption and make up the bulk content.</p>
-                                        <a href="#" class="btn order">ORDER</a>
+                                        <p class="card-title">Feature 2</p>
+                                        <p class="card-title font-weight-bold">60.000 &#8363;</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="card">
-                                    <img src="./assets/image/carousel2.jpg" class="card-img-top" alt="...">
+                                    <img src="../assets/image/carousel3.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Feature 3</h5>
-                                        <p class="card-text">Some quick example text to caption and make up the bulk content.</p>
-                                        <a href="#" class="btn order">ORDER</a>
+                                        <p class="card-title">Feature 3</p>
+                                        <p class="card-title font-weight-bold">50.000 &#8363;</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="card">
-                                    <img src="./assets/image/carousel2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Feature 4</h5>
-                                        <p class="card-text">Some quick example text to caption and make up the bulk content.</p>
-                                        <a href="#" class="btn order">ORDER</a>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row fadeout">
+                <div class="col-md-4 " id="social-bar">
+                    <a href="https://www.facebook.com/">
+                        <img class="social-icon" src="../assets/image/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img class="social-icon" src="../assets/image/instagram.png" alt="instagram"></a>
+                </div>
+                <div class="col-md-4 justify-content-center contact-form">
+                    Register to get promo monthly
+                </div>
+                <div class="col-md-3 contact-form">
+                    <div class="input-group">
+                        <input type="email" [(ngModel)]="password" class="form-control" placeholder="Email address" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <button class="input-group-text" id="basic-addon1">Register</button>
                         </div>
                     </div>
                 </div>
